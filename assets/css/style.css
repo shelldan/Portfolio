@@ -1,0 +1,50 @@
+root {
+    --light-orange:#f2dcc7;
+    --light-blue:#c7f2eb;
+}
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family:'Trebuchet MS';
+}
+
+body{
+    background-color: var(--light-orange);
+}
+
+.header{
+    padding:20px;
+    background-color:var(--light-blue);
+    color:black
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li{
+    display:inline-block;
+    margin-left:25px;
+}
+
+.subheader h2{
+    margin:20px;
+    border-right:5px;
+    border-right-color:blue;
+    padding:20px;
+    font-size:50px;
+}
