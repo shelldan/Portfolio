@@ -47,4 +47,15 @@ body{
     border-right-color:blue;
     padding:20px;
     font-size:50px;
+    
 }
+
+#subtitle {
+    display:flex;
+}
+
+.wrap img{
+    display: flex;
+    flex-wrap:wrap;
+}
+
