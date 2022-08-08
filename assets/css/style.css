@@ -14,12 +14,14 @@ body{
     background-color: var(--light-orange);
 }
 
+/* header class */
 .header{
     padding:20px;
-    background-color:var(--light-blue);
-    color:black
+    background-color: #ed9261;
+    color: white;
 }
 
+/* XiaoLi */ 
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -34,6 +36,7 @@ body{
 
 .header nav ul {
     list-style-type: none;
+    
 }
 
 .header nav ul li{
@@ -41,12 +44,12 @@ body{
     margin-left:25px;
 }
 
-/* Surf Report Image Position in related to the header's position*/
-.topcontainer{
+/* cool subtitle image position*/
+.cool-container{
     position:relative;
 }
 
-/* Surf Report Header Position*/
+/* cool subtitle in related to image position*/
 .bottom-right {
     position:absolute;
     bottom: 10px;
@@ -57,10 +60,11 @@ body{
 
 .subheader h2{
     margin:20px;
-    border-right:5px;
-    border-right-color:blue;
+    border-right:5px solid blue;
     padding:20px;
     font-size:50px;
+    display:flex;
+    justify-content:flex-start;
     
 }
 
@@ -75,6 +79,7 @@ body{
     display:flex;
     justify-content:flex-start;
 }
+
 
 /* 4 other images position in related to the header's position */
 .container{
@@ -93,8 +98,10 @@ body{
 /* 4 other images position */
 .wrap img{
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content:center;
     width:100%;
+    margin:10px;
 }
 
 #paragraph {
