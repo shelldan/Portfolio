@@ -41,6 +41,20 @@ body{
     margin-left:25px;
 }
 
+/* Surf Report Image Position in related to the header's position*/
+.topcontainer{
+    position:relative;
+}
+
+/* Surf Report Header Position*/
+.bottom-right {
+    position:absolute;
+    bottom: 10px;
+    right:16px;
+    color: white;
+    font-size:30px;
+}
+
 .subheader h2{
     margin:20px;
     border-right:5px;
@@ -50,12 +64,45 @@ body{
     
 }
 
+/* Contact Me - listing */ 
+.subheader nav ul li {
+    display:inline-block;
+    margin-left:25px;
+}
+
+/* About Me, Work, Contact Me */
 #subtitle {
     display:flex;
+    justify-content:flex-start;
 }
 
+/* 4 other images position in related to the header's position */
+.container{
+    position:relative;
+}
+
+/* 4 other image headers position */
+.bottom-left{
+    position:absolute;
+    bottom:50px;
+    left:16px;
+    color:white;
+    font-size:30px;
+}
+
+/* 4 other images position */
 .wrap img{
     display: flex;
-    flex-wrap:wrap;
+
+    width:100%;
 }
 
+#paragraph {
+    margin:20px;
+}
+
+@media screen and (max-width: 992px) {
+    .wrap {
+        width: 50%;
+    }
+}
