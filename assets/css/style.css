@@ -65,77 +65,96 @@ header nav ul li{
     font-size:30px;
 }
 
-.subheader h2{
+/*border: 1px solid red; for visibility purpose, will comment out later */
+main{
+    display:block;
+    /* border: 1px solid red;  */
+}
+
+.about-me{
+    display:flex;
+}
+
+#about-me{
+    flex:0 0 25%;
     margin:20px;
-    border-right:5px solid blue;
+    border-right:5px solid red;
     padding:20px;
     font-size:50px;
-    flex: 0 0 25%;
 }
 
-#subtitle {
+#about-me-paragraph {
+    flex: 0 0 75%;
+}
+
+
+.work{
     display:flex;
-    justify-content:flex-start;
+}
+
+#work{
+    flex:0 0 25%;
+    margin:20px;
+    border-right:5px solid red;
+    padding:20px;
+    font-size:50px;
+}
+
+/*parent=div; children = figure*/
+.work-img{
+    display:inline-flex;
     flex-wrap:wrap;
-    /* gap:10px; */
 }
 
-
-.container{
+figure .container{
     position:relative;
+    border: 5px solid orange;
 }
 
-
-.bottom-left{
+figure h3 .bottom-left{
     position:absolute;
     bottom:50px;
     left:16px;
-    color:white;
+    color:black;
     font-size:30px;
 }
 
-.left{
+figure h3 h4.left{
     position: absolute;
     bottom:20px;
     left:16px;
-    color:white;
+    color:black;
     font-size:15px;
 }
 
-/* .wrap {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content:space-between; 
-    width:100%; 
-    margin:10px; 
-} */
-
-#paragraph {
-    margin:20px;
-}
-
-.wrap img{
-    /* width:100%; */
+.contact-me{
     display:flex;
-    flex-wrap:wrap;
-    align-items:flex-end;
 }
 
-.subheader nav ul {
+#contact-me{
+    flex:0 0 25%;
+    margin:20px;
+    border-right:5px solid red;
+    padding:20px;
+    font-size:50px;    
+}
+
+section nav ul{
     list-style-type:none;
 }
 
-.subheader nav ul li {
+section nav ul li{
     display:inline-block;
     margin:50px;
 }
+
 
 /* $desktop: 1200px
 $laptop:1024px;
 $tablet:768px;
 $phone:480px; */
 
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
     .wrap {
         width: 33%;
     }
@@ -145,4 +164,4 @@ $phone:480px; */
     .wrap {
         width: 50%;
     }
-}
+} */
