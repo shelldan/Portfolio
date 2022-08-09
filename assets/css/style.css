@@ -66,16 +66,22 @@ body{
     flex: 0 0 25%;
 }
 
+.subheader nav ul {
+    list-style-type:none;
+}
+
 /* Contact Me - listing */ 
 .subheader nav ul li {
     display:inline-block;
-    margin-left:25px;
+    margin:50px;
 }
 
 /* About Me, Work, Contact Me */
 #subtitle {
     display:flex;
     justify-content:flex-start;
+    flex-wrap:wrap;
+    /* gap:10px; */
 }
 
 /* 4 other images position in related to the header's position */
@@ -92,33 +98,46 @@ body{
     font-size:30px;
 }
 
+.left{
+    position: absolute;
+    bottom:20px;
+    left:16px;
+    color:white;
+    font-size:15px;
+}
 /* 4 other images position */
-.wrap img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    width:100%;
-    margin:10px;
+.wrap {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content:space-between; */
+    /* width:100%; */
+    /* margin:10px; */
 }
 
 #paragraph {
     margin:20px;
 }
 
+.wrap img{
+    /* width:100%; */
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-end;
+}
 
 /* $desktop: 1200px
 $laptop:1024px;
 $tablet:768px;
 $phone:480px; */
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width:1200px) {
     .wrap {
-        width: 50%;
+        width: 33%;
     }
 }
 
 @media screen and (min-width:480px) {
     .wrap {
-        width: 100%;
+        width: 50%;
     }
 }
