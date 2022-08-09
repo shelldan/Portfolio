@@ -63,9 +63,7 @@ body{
     border-right:5px solid blue;
     padding:20px;
     font-size:50px;
-    display:flex;
-    justify-content:flex-start;
-    
+    flex: 0 0 25%;
 }
 
 /* Contact Me - listing */ 
@@ -79,7 +77,6 @@ body{
     display:flex;
     justify-content:flex-start;
 }
-
 
 /* 4 other images position in related to the header's position */
 .container{
@@ -99,7 +96,7 @@ body{
 .wrap img{
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-between;
     width:100%;
     margin:10px;
 }
