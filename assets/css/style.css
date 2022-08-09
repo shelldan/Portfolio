@@ -1,56 +1,63 @@
-root {
+/* root {
     --light-orange:#f2dcc7;
     --light-blue:#c7f2eb;
-}
+} */
 
+/* box-sizing: border-box; width/height = border + height + width/height of content */
 *{
     box-sizing:border-box;
     padding:0;
     margin:0;
-    font-family:'Trebuchet MS';
 }
 
 body{
-    background-color: var(--light-orange);
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* header class */
-.header{
+header{
+    height:100px;
     padding:20px;
     background-color: #ed9261;
-    color: white;
 }
 
-/* XiaoLi */ 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
+    color:white;
+    font-weight:400px;
 }
 
-.header nav{
+header nav{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-size: 20px;
+    color:white;
+    font-weight:400px;
 }
 
-.header nav ul {
+header nav ul {
     list-style-type: none;
-    
 }
 
-.header nav ul li{
+header nav ul li{
     display:inline-block;
     margin-left:25px;
 }
 
-/* cool subtitle image position*/
-.cool-container{
+.road-to-success{
     position:relative;
 }
 
-/* cool subtitle in related to image position*/
-.bottom-right {
+.porfolio{
+    position:absolute;
+    border:5px solid green;
+    left:16px;
+    top:10px;
+    
+}
+
+.road-to-success-heading{
     position:absolute;
     bottom: 10px;
     right:16px;
@@ -66,17 +73,6 @@ body{
     flex: 0 0 25%;
 }
 
-.subheader nav ul {
-    list-style-type:none;
-}
-
-/* Contact Me - listing */ 
-.subheader nav ul li {
-    display:inline-block;
-    margin:50px;
-}
-
-/* About Me, Work, Contact Me */
 #subtitle {
     display:flex;
     justify-content:flex-start;
@@ -84,12 +80,12 @@ body{
     /* gap:10px; */
 }
 
-/* 4 other images position in related to the header's position */
+
 .container{
     position:relative;
 }
 
-/* 4 other image headers position */
+
 .bottom-left{
     position:absolute;
     bottom:50px;
@@ -105,14 +101,14 @@ body{
     color:white;
     font-size:15px;
 }
-/* 4 other images position */
-.wrap {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content:space-between; */
-    /* width:100%; */
-    /* margin:10px; */
-}
+
+/* .wrap {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content:space-between; 
+    width:100%; 
+    margin:10px; 
+} */
 
 #paragraph {
     margin:20px;
@@ -123,6 +119,15 @@ body{
     display:flex;
     flex-wrap:wrap;
     align-items:flex-end;
+}
+
+.subheader nav ul {
+    list-style-type:none;
+}
+
+.subheader nav ul li {
+    display:inline-block;
+    margin:50px;
 }
 
 /* $desktop: 1200px
