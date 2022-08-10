@@ -1,8 +1,3 @@
-/* root {
-    --light-orange:#f2dcc7;
-    --light-blue:#c7f2eb;
-} */
-
 /* box-sizing: border-box; width/height = border + height + width/height of content */
 *{
     box-sizing:border-box;
@@ -12,63 +7,107 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    background: #f5ecd5;
 }
 
-header{
+/* use container to divide the content*/
+.container {
+    /* Set the max-width */
+    /* max-width: 1450px; */
+    width:100vw;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+ul{
+    list-style-type:none;
+}
+
+.navbar{
+    background:#ed9261;;
+    color:white;
     height:100px;
-    padding:20px;
-    background-color: #ed9261;
 }
 
-header h1 {
-    display: inline-block;
-    font-size: 48px;
+.navbar .name{
+    font-size:x-large;
+    font-weight:bold;
     color:white;
     font-weight:400px;
 }
 
-header nav{
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
+.navbar a{
     color:white;
-    font-weight:400px;
+    font-size:18px;
+    font-weight:bold;
 }
 
-header nav ul {
-    list-style-type: none;
+.navbar .container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    /* the height of navbar = .navbar{ height:100px }, however our flex box is on the container, which has NO height, we could add height:100%;  */
+    height:100% 
 }
 
-header nav ul li{
-    display:inline-block;
-    margin-left:25px;
+.navbar ul{
+    display:flex;
 }
 
-.road-to-success{
+.navbar ul li{
+    margin-left:20px;
+}
+
+.navbar a:hover{
+    color:green;
+}
+
+.road-to-success {
     position:relative;
+}
+
+/* why this container doesn't take up the whole space? */
+.road-to-success .container{
+    /* display:flex;
+    justify-content:space-between;
+    align-items:center; */
+    width:100%;
+    height:200px;
+}
+
+.road-to-success-img{
+    /* width:100%;
+    height:200px; */
+    object-fit:cover;
+    width:100%;
+    height:100%;
 }
 
 .porfolio{
     position:absolute;
     border:5px solid green;
-    left:16px;
-    top:10px;
-    
+    left:35px;
+    top:25px;
+    width: 15%;
+    height:150px;
 }
 
 .road-to-success-heading{
     position:absolute;
-    bottom: 10px;
-    right:16px;
+    bottom: 20px;
+    right:15px;
     color: white;
     font-size:30px;
+    background: orange;
+    border: 5px solid #eb8d2f;
+    width:30%;
 }
 
-/*border: 1px solid red; for visibility purpose, will comment out later */
-main{
-    display:block;
-    /* border: 1px solid red;  */
+
+.main {
+    display:flex;
+    flex-wrap:wrap;
+    /*border: 1px solid red;*/ /*for visibility purpose, will comment out later*/
 }
 
 .about-me{
@@ -85,6 +124,7 @@ main{
 
 #about-me-paragraph {
     flex: 0 0 75%;
+    margin: 30px;
 }
 
 
@@ -102,12 +142,43 @@ main{
 
 /*parent=div; children = figure*/
 .work-img{
-    display:inline-flex;
+    display:flex;
     flex-wrap:wrap;
+    gap:10px;
 }
 
-figure .container{
+/* first image */
+.work-img .box{
+    height:300px;
+    width:900px;
     position:relative;
+    flex:1 1 auto;
+}
+
+.work-img figure .surf-report{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    vertical-align:middle;
+    border-radius:5px;
+    border: 5px solid orange;
+}
+
+/*other four images*/
+.work-img figure{
+    height:300px;
+    width:450px;
+    position:relative;
+    flex:1 1 auto;
+    
+}
+
+.work-img figure img {
+    object-fit:cover;
+    width: 100%;
+    height:100%;
+    vertical-align:middle;
+    border-radius:5px;
     border: 5px solid orange;
 }
 
@@ -117,8 +188,8 @@ figure figcaption{
     margin-top: -80px;
     color:white;
     background: orange;
-
-}
+    border: 5px solid #eb8d2f;
+} 
 
 .contact-me{
     display:flex;
@@ -142,19 +213,20 @@ section nav ul li{
 }
 
 
-/* $desktop: 1200px
-$laptop:1024px;
-$tablet:768px;
-$phone:480px; */
+/* On screens that are 768px or less */ 
+@media screen and (max-width:768px) {
+    .navbar .container{
+        flex-direction:column;
+        padding-top: 20px;
+        text-align:center;
+    }
 
-/* @media screen and (min-width:1200px) {
-    .wrap {
-        width: 33%;
+    .road-to-success .container{
+        flex-direction:column;
+    }
+
+    .main .container .work .work-img{
+        flex-direction:column;
+        flex-wrap:wrap;
     }
 }
-
-@media screen and (min-width:480px) {
-    .wrap {
-        width: 50%;
-    }
-} */
