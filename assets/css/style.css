@@ -111,20 +111,13 @@ figure .container{
     border: 5px solid orange;
 }
 
-figure h3 .bottom-left{
+figure figcaption{
     position:absolute;
-    bottom:50px;
-    left:16px;
-    color:black;
-    font-size:30px;
-}
+    margin-left:15px;
+    margin-top: -80px;
+    color:white;
+    background: orange;
 
-figure h3 h4.left{
-    position: absolute;
-    bottom:20px;
-    left:16px;
-    color:black;
-    font-size:15px;
 }
 
 .contact-me{
