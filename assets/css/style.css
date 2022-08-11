@@ -265,6 +265,18 @@ section nav ul li a{
         width:100%;
         justify-content: left;
     }
+
+    #about-me{
+        border-right: 0px;
+    }
+
+    #work{
+        border-right:0px;
+    }
+
+    #contact-me{
+        border-right:0px;
+    }
 }
 
 
@@ -311,4 +323,15 @@ section nav ul li a{
         font-size:1rem;
     }
 
+    #about-me{
+        border-right: 0px;
+    }
+
+    #work{
+        border-right:0px;
+    }
+
+    #contact-me{
+        border-right:0px;
+    }
 }
