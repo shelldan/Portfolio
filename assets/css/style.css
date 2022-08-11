@@ -8,6 +8,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     background: #f5ecd5;
+    overflow-x:hidden; /*fit into screen, width */
 }
 
 /* use container to divide the content*/
@@ -66,18 +67,18 @@ ul{
     position:relative;
 }
 
-/* why this container doesn't take up the whole space? */
+.flex-direction{
+    flex-direction:row;
+}
+
+
 .road-to-success .container{
-    /* display:flex;
-    justify-content:space-between;
-    align-items:center; */
     width:100%;
     height:200px;
+    padding:0px;
 }
 
 .road-to-success-img{
-    /* width:100%;
-    height:200px; */
     object-fit:cover;
     width:100%;
     height:100%;
@@ -212,8 +213,62 @@ section nav ul li{
     margin:50px;
 }
 
+section nav ul li a{
+    color: orange;
+    font-weight:bolder;
+}
 
-/* On screens that are 768px or less */ 
+/* On screens that are 480px or less */ 
+@media screen and (max-width:480px) {
+    .navbar .container{
+        flex-direction:column;
+        padding-top: 20px;
+        text-align:center;
+    }
+
+    .road-to-success .container{
+        flex-direction:column;
+    }
+
+    .main .container .work .work-img{
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+
+    .flex-direction{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .work-img .box{
+        height:300px;
+        width:100%;
+    }
+
+    .work-img figure{
+        height:300px;
+        width:100%;
+    }
+
+    .porfolio{
+        width:35%;
+        height:35%;
+    }
+
+    .road-to-success-heading{
+        width:100%;
+        height:15%;
+        font-size:10px;
+    }
+
+    #contact-me nav ul li{
+        width:100%;
+        justify-content: left;
+    }
+}
+
+
+/* On screens that are 768x or less */ 
 @media screen and (max-width:768px) {
     .navbar .container{
         flex-direction:column;
@@ -229,4 +284,31 @@ section nav ul li{
         flex-direction:column;
         flex-wrap:wrap;
     }
+
+    .flex-direction{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .work-img .box{
+        height:300px;
+        width:100%;
+    }
+
+    .work-img figure{
+        height:300px;
+        width:100%;
+    }
+
+    .porfolio{
+        width:30%;
+        height:45%;
+    }
+
+    .road-to-success-heading{
+        width:60%;
+        height:15%;
+        font-size:1rem;
+    }
+
 }
