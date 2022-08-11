@@ -27,9 +27,9 @@ https://shelldan.github.io/Portfolio/
 ## Screenshot of the application
 
 <div>
-    <img src="./assets/images/readme_top.png" width="400px"/> 
+    <img src="./assets/images/readme_top.png" width="100%"/> 
 </div>
 
 <div>
-     <img src="./assets/images/readme_bottom.png" width="400px"/>
+     <img src="./assets/images/readme_bottom.png" width="100%/>
 </div>
