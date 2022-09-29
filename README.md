@@ -22,7 +22,7 @@ Given I need to sample a potential employee's previous work
 * When I resize the page or view the site on various screens and devices, then I am presented with a responsive layout that adapts to my viewport
 
 ## Link to deployed application
-https://shelldan.github.io/Portfolio/
+https://shelldan.github.io/portfolio/
 
 ## Screenshot of the application
 
