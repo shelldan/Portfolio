@@ -16,7 +16,7 @@
 6. [License](#license)
 7. [Contributing](#contributing)
 8. [Test](#test)
-9. [Questions](#contact-information)
+9. [Contact Information](#contact-information)
 
 ## Description
 The task is to create a portfolio that uses the these skills: flexbox, media queries, and CSS variables. 
