@@ -84,7 +84,7 @@ ul{
     height:100%;
 }
 
-.porfolio{
+.portfolio{
     position:absolute;
     border:5px solid green;
     left:35px;
@@ -250,7 +250,7 @@ section nav ul li a{
         width:100%;
     }
 
-    .porfolio{
+    .portfolio{
         width:35%;
         height:35%;
     }
@@ -313,7 +313,7 @@ section nav ul li a{
         width:100%;
     }
 
-    .porfolio{
+    .portfolio{
         width:30%;
         height:45%;
     }
